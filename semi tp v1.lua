@@ -1,3 +1,99 @@
+-- =========================
+-- Whitelist Check
+-- =========================
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local UserInputService = game:GetService("UserInputService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local TextService = game:GetService("TextService")
+
+local player = Players.LocalPlayer
+local lp = player  -- Alias for compatibility
+
+local Whitelist = {
+    "DODO4",
+    "MANGGO_497",
+    "99night_072",
+    "sogane1234",
+    "MANGOAT090",
+    "sadowyoni_ytb",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne",
+    "personne"
+}
+
+local function isWhitelisted(name)
+    name = name:lower()
+    for _, v in ipairs(Whitelist) do
+        if name == v:lower() then
+            return true
+        end
+    end
+    return false
+end
+
+if not isWhitelisted(player.Name) and not isWhitelisted(player.DisplayName) then
+    player:Kick("Not whitelisted")
+    return
+end
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
