@@ -11,12 +11,12 @@ local player = Players.LocalPlayer
 local lp = player  -- Alias for compatibility
 
 local Whitelist = {
-    "tropmignon44",
+    "sadowyoni_ytb",
     "MANGGO_497",
     "99night_072",
     "sogane1234",
     "MANGOAT090",
-    "sadowyoni_ytb",
+    "personne",
     "personne",
     "personne",
     "personne",
